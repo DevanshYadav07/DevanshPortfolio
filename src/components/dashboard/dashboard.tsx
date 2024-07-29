@@ -1,53 +1,33 @@
-"use client"
 import React from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from 'react-icons/si';
 
 const Dashboard = () => {
-  const [text] = useTypewriter({
-    words: ["Developer", "Coder"],
-    loop: 0,
-    typeSpeed: 100,
-    deleteSpeed: 100,
-  });
-  const leetcodeUrl = "https://leetcode.com/Prince_0001/";
-  const instagramUrl = "https://www.instagram.com/prince_mehta01/";
-  const linkedinUrl = "https://www.linkedin.com/in/prince0000";
-  const githubUrl = "https://github.com/Prince-0000";
+  const leetcodeUrl = "https://leetcode.com/u/RelentlessDevansh/";
+  const instagramUrl = "https://www.instagram.com/dd_does__/";
+  const linkedinUrl = "https://www.linkedin.com/in/devansh0006/";
+  const githubUrl = "https://github.com/DevanshYadav07";
+
   return (
-    <div id="home" className="text-white">
-      <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center items-center flex flex-col justify-center">
-        <p className="text-[#00df9a] font-bold md:mb-[-10px] p-2">
-          HEY THERE I&apos;M
+    <div id="home" className="text-white flex items-center h-screen "
+    style={{ backgroundColor: '#1a1a1a' }}>
+      <div className="max-w-[800px] w-full mx-auto flex flex-col items-start p-8">
+        <p className=" font-bold mb-2">HEY THERE I&apos;M</p>
+        <h1 className="text-5xl font-bold mb-4 text-[#2596be]">DEVANSH YADAV</h1>
+        <p className="text-xl font-bold text-gray-500 mb-4">
+          Solving Problems and Creating Scalable and Robust Solutions
         </p>
-        <h1 className="md:text-5xl sm:text-5xl text-4xl font-bold md:py-6 ">
-          PRINCE MEHTA
-        </h1>
-        <div className="flex justify-center items-center">
-          <p className="md:text-5xl sm:text-4xl sm:pt-10 text-xl font-bold py-4"></p>
-          <span className="md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2">
-            <span>A </span>
-            {text}
-            <span>
-              <Cursor />
-            </span>
-          </span>
-        </div>
-        <p className="md:text-2xl text-xl font-bold text-gray-500 px-2 mt-4">
-        Unlocking Efficiency with Full-Stack Mastery & DSA Insights
-        </p>
-        <div className="flex justify-center items-center space-x-5 md:w-[75%] my-8">
-          <a href={leetcodeUrl} target="blank">
+        <div className="flex space-x-5">
+          <a href={leetcodeUrl} target="blank" className="hover:text-[#2596be]">
             <SiLeetcode size={30} />
           </a>
-          <a href={instagramUrl} target="blank">
+          <a href={instagramUrl} target="blank" className="hover:text-[#2596be]">
             <FaInstagram size={30} />
           </a>
-          <a href={linkedinUrl} target="blank">
+          <a href={linkedinUrl} target="blank" className="hover:text-[#2596be]">
             <FaLinkedinIn size={30} />
           </a>
-          <a href={githubUrl} target="blank">
+          <a href={githubUrl} target="blank" className="hover:text-[#2596be]">
             <FaGithub size={30} />
           </a>
         </div>

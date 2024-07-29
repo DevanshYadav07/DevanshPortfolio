@@ -10,7 +10,8 @@ const Navbar = () => {
   const handleNav = () => {
     setNav(!nav);
   };
-  const fileUrl = "https://drive.google.com/file/d/11SYjrAkLg5pAfdpfyyun8K66isc0fzig/view?usp=sharing";
+
+  const fileUrl = " https://drive.google.com/file/d/116G7UGmwhnikc0XsQja-NC9J_75dN4FU/view?usp=sharing";
   const handleDownload = () => {
     window.open(fileUrl, "_blank");
     // toast.info("You don't have access !");
@@ -20,9 +21,9 @@ const Navbar = () => {
       <h1>
         <a
           href="/"
-          className="w-full md:text-3xl text-2xl font-bold text-[#00df9a]"
+          className="w-full md:text-3xl text-2xl font-bold text-[#2596be]"
         >
-          PORTFOLIO
+          DY
         </a>
       </h1>
       <ul className="hidden md:flex">
@@ -37,9 +38,6 @@ const Navbar = () => {
         </li>
         <li className="p-4">
           <a href="#project">Projects</a>
-        </li>
-        <li className="p-4">
-          <a href="#skills">Skills</a>
         </li>
         <li className="p-4">
           <a href="#footer">Contact</a>
@@ -64,8 +62,8 @@ const Navbar = () => {
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="w-full md:text-3xl text-2xl font-bold text-[#00df9a] m-4">
-          PORTFOLIO
+        <h1 className="w-full md:text-3xl text-2xl font-bold text-[#2596be] m-4">
+          DY
         </h1>
         <ul className="uppercase p-4">
           <li onClick={handleNav} className="p-4 border-b border-gray-600">
@@ -80,9 +78,7 @@ const Navbar = () => {
           <li onClick={handleNav} className="p-4 border-b border-gray-600">
             <a href="#project">Projects</a>
           </li>
-          <li onClick={handleNav} className="p-4 border-b border-gray-600">
-            <a href="#skills">Skills</a>
-          </li>
+
           <li onClick={handleNav} className="p-4 border-b border-gray-600">
             <a href="#footer">Contact</a>
           </li>

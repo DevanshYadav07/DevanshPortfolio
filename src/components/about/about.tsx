@@ -1,9 +1,17 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import Profile from "@/assests/profile1.png"
-
+import Profile from "@/assests/profile1.jpg"
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 const About = () => {
+
+  const [text] = useTypewriter({
+    words: ["Resilient", "Adaptive","Enthusiastic"],
+    loop: 0,
+    typeSpeed: 80,
+    deleteSpeed: 100,
+  });
+
   return (
     <div id="about" className="w-full bg-white py-[8rem] px-4">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
@@ -13,27 +21,29 @@ const About = () => {
           alt="laptop"
         />
         <div className="flex flex-col justify-center">
-          <p className="text-[#00df9a] font-bold mt-2">ABOUT ME</p>
-          <h1 className="md:text-3xl whitespace-pre sm:text-2xl text-xl font-bold py-2">
-            Welcome to my portfolio!
-          </h1>
+          <p className="text-[#2596be] font-bold mt-2">ABOUT ME</p>
+          <div className="md:text-3xl whitespace-pre sm:text-2xl text-xl font-bold py-2">
+          <span >
+            {text}
+            <span>
+              <Cursor />
+            </span>
+          </span>
+          </div>
           <p>
             {" "}
-            I am a fourth year B.Tech CS student at Graphic Era Hill Univerity. I
-            am a skilled full stack developer with experience in front-end development. 
-            I am also a proficient coder with strong
-            problem-solving skills. I am dedicated and hardworking, with a
-            passion for software development. I am also flexible and adaptive,
-            able to quickly learn new technologies and adapt to new situations.
+            I am a final year B.Tech CSE student at Graphic Era Univerity. I
+            having good problem solving skills and passionate to create solution that helps 
+            people. I am a skilled full stack developer with experience in front-end development.
+            and Enthusiastic to learn new skills.
           </p>
+
+       
           <p className="py-3">
-            My portfolio showcases a diverse collection of projects that
-            highlight my problem-solving abilities
+            You can find project showcasing my skills and talent .
           </p>
           <p>
-            I am dedicated to staying up-to-date with the latest industry trends
-            and technologies. I continuously expand my knowledge and skills
-            through self-learning and professional development
+            
           </p>
           {/* <button className="bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3">
             Get Started
