@@ -68,13 +68,13 @@ const Projects = () => {
   ];
 
   const slideLeft = () => {
-    const slider = document.getElementById("slider");
-    if (slider) slider.scrollBy({ left: -500, behavior: 'smooth' });
+    var slider = document.getElementById("slider");
+    if (slider !== null) slider.scrollLeft -= slider.clientWidth;
   };
 
   const slideRight = () => {
-    const slider = document.getElementById("slider");
-    if (slider) slider.scrollBy({ left: 500, behavior: 'smooth' });
+    var slider = document.getElementById("slider");
+    if (slider !== null) slider.scrollLeft += slider.clientWidth;
   };
 
   return (
@@ -103,7 +103,7 @@ const Projects = () => {
               liveUrl={project.liveUrl}
               codeUrl={project.codeUrl}
               description={project.description}
-              techs={project.tech}
+              tech={project.tech}
             />
           ))}
         </div>

@@ -11,7 +11,7 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const fileUrl = " https://drive.google.com/file/d/116G7UGmwhnikc0XsQja-NC9J_75dN4FU/view?usp=sharing";
+  const fileUrl = "https://drive.google.com/file/d/1yZ4tbSO_g4B8me9UMHOebaZtYN5ncT0J/view?usp=sharing";
   const handleDownload = () => {
     window.open(fileUrl, "_blank");
     // toast.info("You don't have access !");
@@ -27,7 +27,7 @@ const Navbar = () => {
         </a>
       </h1>
       <ul className="hidden md:flex">
-        <li className="p-4">
+        {/* <li className="p-4">
           <a href="#home">Home</a>
         </li>
         <li className="p-4">
@@ -41,12 +41,13 @@ const Navbar = () => {
         </li>
         <li className="p-4">
           <a href="#footer">Contact</a>
-        </li>
+        </li> */}
         <button
           onClick={handleDownload}
           className="bg-white my-[5px] mx-3 text-black w-[105px] rounded-md font-medium"
         >
-          <span className="flex flex-row pl-3 ">
+          <span className="flex flex-row pl-3 p-2 sm:p-4
+          ">
             <GrDocumentDownload size={20} />
           </span>
           <span className="flex absolute top-9 pl-9">Resume</span>
@@ -66,7 +67,7 @@ const Navbar = () => {
           DY
         </h1>
         <ul className="uppercase p-4">
-          <li onClick={handleNav} className="p-4 border-b border-gray-600">
+          {/* <li onClick={handleNav} className="p-4 border-b border-gray-600">
             <a href="#home">Home</a>
           </li>
           <li onClick={handleNav} className="p-4 border-b border-gray-600">
@@ -81,7 +82,7 @@ const Navbar = () => {
 
           <li onClick={handleNav} className="p-4 border-b border-gray-600">
             <a href="#footer">Contact</a>
-          </li>
+          </li> */}
           <button
             onClick={handleDownload}
             className="bg-white my-3 mx-3 text-black w-[100px] h-10 rounded-md font-medium"
